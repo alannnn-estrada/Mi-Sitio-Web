@@ -1,0 +1,9 @@
+html,
+body {
+    width: auto;
+    height: 100%;
+}
+
+.bg-dark{
+    background-color: #08090B!important;
+}

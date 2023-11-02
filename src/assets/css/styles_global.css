@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Source+Sans+Pro');
+
+* {
+    font-family: "Roboto", sans-serif;
+    color: #f3f3f3;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #08090B;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h4 {
+    color: #4672fe;
+}

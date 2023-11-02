@@ -1,0 +1,235 @@
+.container-animation {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.gear {
+    margin-left: -88px;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    animation: gear-rotation 4s linear infinite;
+}
+
+@keyframes gear-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.human {
+    position: relative;
+    width: 182px;
+    height: 127px;
+}
+
+.head {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #ffff;
+    border-radius: 50px;
+    z-index: 10;
+}
+
+.helmet {
+    position: absolute;
+    width: 55px;
+    height: 20px;
+    background: yellow;
+    border-radius: 100px 100px 0 0;
+    z-index: 11;
+}
+
+.helmetLogo {
+    position: absolute;
+    /*Tamaño*/
+    width: 12px;
+    height: 12px;
+    /*Posicion*/
+    top: 5px;
+    left: 35px;
+    background: red;
+    border-radius: 50px;
+    z-index: 13;
+}
+
+.torso {
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    width: 30px;
+    height: 70px;
+    background: #ffff;
+    border-radius: 40px;
+}
+
+.arms {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    border-radius: 50px;
+    z-index: 30;
+}
+
+.arm-1 {
+    background-color: #ffff;
+    top: 35px;
+    left: 25px;
+    width: 70px;
+    height: 15px;
+    transform: rotate(-40deg);
+}
+
+.arm-2 {
+    background-color: #ffff;
+    width: 70px;
+    height: 15px;
+    transform: rotate(-5deg);
+}
+
+.legs {
+    position: absolute;
+    left: 0px;
+    top: 90px;
+    border-radius: 50px;
+}
+
+.leg-1 {
+    left: 25px;
+    background-color: #ffff;
+    width: 15px;
+    height: 65px;
+    transform: rotate(-10deg);
+}
+
+.leg-2 {
+    left: 10px;
+    background-color: #ffff;
+    width: 15px;
+    height: 65px;
+    transform: rotate(10deg);
+}
+
+.shoes {
+    background-color: #2e1919;
+    left: -1px;
+    top: 45px;
+    width: 17px;
+    height: 21px;
+    position: absolute;
+    border-radius: 0 0 50px 50px;
+}
+
+.gear-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background: #f98800;
+    border-radius: 50px;
+    z-index: 10;
+}
+
+.gear-center-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 55px;
+    /* border: 13px solid #f98800; */
+    /**Modificar si es necesario el background*/
+    background: #08090B;
+    border-radius: 55px;
+    z-index: 1;
+}
+
+.gear-center-2-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 5px;
+    z-index: 5;
+}
+
+.rotate-45 {
+    transform: translate(-50%, -50%) rotate(40deg);
+    background-color: #f98800;
+    z-index: 2;
+}
+
+.rotate-135 {
+    transform: translate(-50%, -50%) rotate(135deg);
+    background-color: #f98800;
+    z-index: 2;
+}
+
+.gear-rectangle {
+    width: 15px;
+    height: 95px;
+    background: #f98800;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+    z-index: -2;
+}
+
+.gear-rectangle:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.gear-rectangle:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(30deg);
+}
+
+.gear-rectangle:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(60deg);
+}
+
+.gear-rectangle:nth-child(4) {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.gear-rectangle:nth-child(5) {
+    transform: translate(-50%, -50%) rotate(120deg);
+}
+
+.gear-rectangle:nth-child(6) {
+    transform: translate(-50%, -50%) rotate(150deg);
+}
+
+.gear-rectangle:nth-child(7) {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.gear-rectangle:nth-child(8) {
+    transform: translate(-50%, -50%) rotate(210deg);
+}
+
+.gear-rectangle:nth-child(9) {
+    transform: translate(-50%, -50%) rotate(240deg);
+}
+
+.gear-rectangle:nth-child(10) {
+    transform: translate(-50%, -50%) rotate(270deg);
+}
+
+.gear-rectangle:nth-child(11) {
+    transform: translate(-50%, -50%) rotate(300deg);
+}
+
+.gear-rectangle:nth-child(12) {
+    transform: translate(-50%, -50%) rotate(330deg);
+}

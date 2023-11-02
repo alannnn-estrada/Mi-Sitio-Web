@@ -1,0 +1,175 @@
+/**Section's*/
+
+#Sobre-Mi {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.img_github {
+    margin: auto 30% !important;
+    border-radius: 50%;
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+
+#Tecnologias {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.tecnologias-img {
+    width: 50%;
+    margin: 15% !important;
+}
+
+.lenguajesTec {
+    margin: 0;
+}
+
+.text-columns {
+    column-count: 2;
+    column-gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/**Cards*/
+
+.cards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+
+    perspective: 1000px;
+    background-color: transparent;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    border: 2px solid #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    display: grid;
+    margin: auto;
+    padding: 10px;
+}
+
+.card-front h2 {
+    font-weight: bold;
+    -webkit-text-stroke: 2px #0074E4;
+    /* text-stroke: 2px #0074E4; */
+    color: transparent;
+    text-align: center;
+}
+
+.card-back {
+    border: 2px solid #e74c3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.card-back a {
+    text-decoration: none;
+}
+
+/**Contacto*/
+#Contacto {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+}
+
+.titulo_contacto_white {
+    font-size: 1.7rem;
+    text-shadow: 0 0 10px, 0 0 20px, 0 0 30px;
+}
+
+.contacto_div {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.redes_sociales {
+    margin: .5rem;
+}
+
+.redes_sociales img {
+    width: 1.5rem;
+    background-color: transparent;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(174deg) brightness(102%) contrast(102%);
+}
+
+
+.contenedor_img_contacto {
+    display: flex;
+}
+
+.imagen_contacto {
+    max-width: 15%;
+    border-radius: 50%;
+    margin: auto;
+    align-items: center;
+}
+
+@media screen and (max-width: 952px) {
+    .logo {
+        margin-left: 20px;
+    }
+
+    #Sobre-Mi {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .img_github {
+        width: 25%;
+    }
+
+    #Tecnologias {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .tecnologias-img {
+        width: 30%;
+        margin: auto 35% !important;
+    }
+
+    .cards {
+        justify-content: center;
+        grid-template-columns: repeat(1, auto);
+    }
+}
