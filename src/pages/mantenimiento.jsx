@@ -1,11 +1,9 @@
 import "../assets/css/styles_maintenance.css";
 import "../assets/css/styles_maintenance_animation.css";
-import { Lienzo } from "../components/hacker_effect";
 
 export function Mantenimiento() {
   return (
     <>
-    <Lienzo/>
       <main className="container">
         <div className="row m-2 p-5 border border-success bg-dark text-center text-primary">
           <div className="col-12 text-center ">
@@ -22,7 +20,7 @@ export function Mantenimiento() {
                 </div>
                 <div className="legs leg-2">
                   <div className="shoes shoe-2"></div>
-                </div>  
+                </div>
               </div>
               <div className="gear">
                 <div className="gear-center"></div>
