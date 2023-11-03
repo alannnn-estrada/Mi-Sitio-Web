@@ -1,10 +1,15 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import scrolling from "../utils/scrolling";
 export function NavLi({ contenido }) {
+  const location = useLocation();
   const navigate = useNavigate();
 
   function handleClick(contenido) {
-    navigate("/");
+    if (location.pathname === "/") {
+      navigate("/");
+    } else {
+      navigate("/Pagina-Web/");
+    }
     setTimeout(() => {
       scrolling(contenido);
     }, 100);
@@ -65,9 +70,9 @@ export function NavDropdownComponent({ contenido, link }) {
   return (
     <li>
       {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-      <a className="dropdown-item text-white" href={link}>
+      <Link to={link} className="dropdown-item text-white">
         {contenido}
-      </a>
+      </Link>
     </li>
   );
 }

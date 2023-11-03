@@ -4,6 +4,8 @@ import Tecnologias from "../components/technologies";
 import RedesS from "../components/redes";
 import "../assets/css/styles_index.css";
 import "../assets/css/styles_start.css";
+import { Link } from "react-router-dom";
+import scrolling from "../utils/scrolling";
 export function Index() {
   return (
     <>
@@ -206,13 +208,13 @@ Language: Java and MYSQL"
               </div>
             </div>
             <div className="contenedor_img_contacto">
-              <a href="/">
+              <Link onClick={() => scrolling("Navbar")}>
                 <img
                   className="imagen_contacto my-3"
                   src={img_github}
                   alt="Programador"
                 />
-              </a>
+              </Link>
             </div>
           </aside>
         </section>

@@ -1,20 +1,20 @@
 import { NavDropdown, NavLi } from "../components/navComponets";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../assets/css/styles_nav.css";
 
-export function Nav() { 
+export function Nav() {
   const locacion = useLocation();
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav id="Navbar" className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
-          <a className="navbar-brand" href="/">
+          <Link to="/Pagina-Web" className="navbar-brand">
             <div className="logo">
               <p> &lt;/&gt; </p>
               <h3>Alann</h3>
               <h5>Estrada</h5>
             </div>
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -28,7 +28,7 @@ export function Nav() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              {locacion.pathname !== "/mantenimiento" && (
+              {locacion.pathname !== "/Pagina-Web/mantenimiento" && (
                 <>
                   <NavLi
                     contenido={[
@@ -42,7 +42,11 @@ export function Nav() {
               )}
               <NavDropdown
                 contenido={["Index", "Mantenimiento", "Herramientas"]}
-                link={["/", "/mantenimiento", "/herramientas"]}
+                link={[
+                  "/Pagina-Web/",
+                  "/Pagina-Web/mantenimiento",
+                  "/Pagina-Web/herramientas",
+                ]}
               />
             </ul>
           </div>
