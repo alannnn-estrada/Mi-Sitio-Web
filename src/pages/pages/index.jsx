@@ -98,7 +98,7 @@ export function Home() {
               "CECYTEM Pagina Web",
             ]}
             visibilidad={[false]}
-            recomendado={[true, true, false, false]}
+            recomendado={[true, true, true, false]}
             tipo={[""]}
           />
         </div>
