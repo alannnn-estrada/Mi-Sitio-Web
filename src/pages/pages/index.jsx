@@ -89,7 +89,7 @@ export function Home() {
               "https://cecytemixp2.000webhostapp.com/",
               "https://vercel.com/alann-estrada/proyecto-fasdatec",
               "https://vercel.com/alann-estrada/dual-projects-fasdatec",
-              "https://alannnn-estrada.github.io/Pagina-Web/",
+              "https://mi-sitio-web-alannnn-estradas-projects.vercel.app/Pagina-Web/",
             ]}
             contenido={[
               "Proyecto Fasdatec",

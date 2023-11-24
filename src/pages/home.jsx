@@ -89,7 +89,7 @@ export function Index() {
               nombre_proyecto="Pagina de enlaces"
               informacion="Link to my personal website
 Language: HTML, CSS and JS"
-              link="https://alannnn-estrada.github.io/"
+              link="https://mi-sitio-web-alannnn-estradas-projects.vercel.app/"
             />
             <Cards
               nombre_proyecto="Pagina-Web-Responsiva"

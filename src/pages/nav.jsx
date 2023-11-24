@@ -8,7 +8,7 @@ export function Nav() {
     <>
       <nav id="Navbar" className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
-          <Link to="/Pagina-Web" className="navbar-brand">
+          <Link to="/" className="navbar-brand">
             <div className="logo">
               <p> &lt;/&gt; </p>
               <h3>Alann</h3>
