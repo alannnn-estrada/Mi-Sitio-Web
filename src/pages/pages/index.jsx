@@ -86,10 +86,10 @@ export function Home() {
           <h3 className="mb-4">Proyectos Web</h3>
           <Links
             link={[
-              "https://cecytemixp2.000webhostapp.com/",
               "https://vercel.com/alann-estrada/proyecto-fasdatec",
               "https://vercel.com/alann-estrada/dual-projects-fasdatec",
               "https://mi-sitio-web-alannnn-estradas-projects.vercel.app/Pagina-Web/",
+              "https://cecytemixp2.000webhostapp.com/",
             ]}
             contenido={[
               "Proyecto Fasdatec",
