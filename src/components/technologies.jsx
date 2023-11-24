@@ -1,7 +1,7 @@
 import { TecnologiasList } from "./technologiesList";
 
 function Tecnologias({ lenguaje }) {
-  fetch("https://api-colors-4t6q-dev.fl0.io/api/colors/uppercase")
+  fetch("https://api-colors-dev-dcfq.3.us-1.fl0.io/api/colors/uppercase")
     .then((response) => response.json())
     .then((languageColors) => {
       const languageElements = document.querySelectorAll(".language");
